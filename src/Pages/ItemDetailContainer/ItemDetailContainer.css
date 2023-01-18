@@ -1,0 +1,102 @@
+.bodyItemDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.imageDetailItem{
+    width: 40vw;
+}
+    .containerDetailsTextItem{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        gap:2vw;
+    }
+        .titleDetailItem{
+            font-size: 2vw;
+            animation-name: initTitle;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            opacity: 1;
+        }
+        @keyframes initTitle {
+            0%{
+                opacity: 0;
+                transform:translateY(10vw);
+
+            }25%{
+                opacity: 1;
+            }
+                50%{
+                transform: translateY(10vw);
+            }100%{
+                opacity: 1;
+            }
+        }
+
+        .containerMoreDataItem{
+            animation-name: initOtherInfo;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            opacity: 1;
+            color: rgba(0, 0, 0, 0.781);
+        }
+        .buttonItem{
+            animation-name: initOtherInfo;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            opacity: 1;
+            border: none;
+            height: 3vw;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: .5vw;
+            background-color: rgba(0, 0, 0, 0.514);
+            color: white;
+            
+        }
+        .containerDetailsPrice{
+            display: flex;
+            gap: 1vw;
+            justify-content: start;
+            align-items: center;
+        }
+            .priceItem{
+                animation-name: initOtherInfo;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+                opacity: 1;
+                font-weight: lighter;
+                font-size: 2vw;
+            }
+            .shopItem{
+                animation-name: initOtherInfo;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+                opacity: 1;
+                background-color: rgba(255, 0, 0, 0.781);
+                padding: 0.7vw;
+                border-radius: .5vw;
+
+                color: white;
+                font-size: 1vw;
+                font-style: italic;
+            }
+        @keyframes initOtherInfo {
+            0%{
+                opacity: 0;
+            }80%{
+                opacity: 0;
+            }100%{
+                opacity: 1;
+            }
+
+        }

@@ -1,0 +1,73 @@
+.containerCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.containerDataCart{
+    width: 95vw;
+    height:95vh;
+    background-color: gainsboro;
+    border-radius: 2vw;
+
+    display: flex;
+    justify-content: start;
+    align-items: center ;
+}
+.containerItemsCart{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.containerDataToPurchase{
+    width: 50%;
+    height: 80%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+}
+    .inputFormCart{
+        width: 23vw;    
+        height: 2.5vw;
+        border: none;
+        padding: 0.5vw;
+
+        border-radius: 1vw;
+    }   
+    .purchaseCartButton{
+        border: none;
+        border-radius: 1vw;
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background-color: rgb(233, 117, 117);
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .purchaseCartButton:hover{
+
+
+        color: black;
+
+        box-shadow: -1px -3px 25px 5px rgba(250,140,140,0.75);
+        -webkit-box-shadow: -1px -3px 25px 5px rgba(250,140,140,0.75);
+        -moz-box-shadow: -1px -3px 25px 5px rgba(250,140,140,0.75);
+    }
+

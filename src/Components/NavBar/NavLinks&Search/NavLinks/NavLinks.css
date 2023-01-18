@@ -1,0 +1,28 @@
+.containerLinks ul{
+    display: flex;
+
+    width: 30vw;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px;
+}
+    .containerLinks ul li{
+        list-style: none;
+    }
+        .containerLinks ul li a{
+            color: white;
+            font-weight: bold;
+            font-size: 1.5vw;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .containerLinks ul li a:hover{
+            border-radius: 0.3vw;
+            background-color: rgba(83, 83, 83, 0.582);
+            padding-top: 0.2vw ;
+            padding-bottom: 0.2vw;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }

@@ -1,0 +1,33 @@
+.CardItemsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+svg{
+    transform: translate(-50%,50%);
+}
+.NavLinkCard{
+    text-decoration: none;
+    color: black;
+}
+.ListItems{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top:2vw ;
+    padding-bottom: 2vw;
+    gap: 2vw;
+}
+    .containerInfoItemList{
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+        margin: 0.5vw;
+    }
+        .titleItem{
+            font-size: 1.5vw;
+        }
+        .priceItemCard{
+            font-size: 1.4vw;
+            font-weight: bold;
+        }
