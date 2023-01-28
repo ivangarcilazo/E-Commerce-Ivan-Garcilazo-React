@@ -140,6 +140,8 @@ export default function ItemDetailContainer(){
                                                 return(
                                                     <option>{stockNumber}</option>
                                                 )
+                                            }else{
+                                                return  <option disabled="true">Out of stock</option>
                                             }
                                             
                                         })}
@@ -147,7 +149,7 @@ export default function ItemDetailContainer(){
                                     
                                 </div>
                                 
-                                <button className="buttonItem" onClick={AddItemToCart} >Buy Now</button>
+                                <button className="buttonItem" onClick={AddItemToCart} disabled={product.stock===0}>Buy Now</button>
                             </div>
                         </ItemDetails>)
                 }

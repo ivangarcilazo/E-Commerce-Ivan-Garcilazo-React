@@ -66,6 +66,10 @@
         .buttonItem:hover{
             background-color: red;
         }
+        .buttonItem:disabled{
+            background-color: gray;
+            
+        }
         .containerDetailsPrice{
             display: flex;
             gap: 1vw;

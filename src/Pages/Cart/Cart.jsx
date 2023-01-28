@@ -59,7 +59,10 @@ export default function CartContainer(){
                 totalAmount:totalAmount
             }
         }
-        addPurchaseUsertoDB(customer)
+        const loadStock={
+            loadStock:false
+        }
+        addPurchaseUsertoDB(customer, loadStock)
         
         const btnPurchase= document.querySelector("#buttonEnableCart")
                 btnPurchase.setAttribute('disabled','')
@@ -73,14 +76,15 @@ export default function CartContainer(){
 
         setTimeout(()=>{
             window.location.href="/"
-        },7000)
+        },5500)
 
     }   
 
-    const addPurchaseUsertoDB=(buyer)=>{
+    const addPurchaseUsertoDB=(buyer, loadStock)=>{
         let userOrder=myCart
             
         userOrder=Object.assign(userOrder, buyer)
+        userOrder=Object.assign(userOrder, loadStock)
         const collectionReference=collection(dataBase, 'ordersByCustomer')
 
         addDoc(collectionReference,userOrder ).then((data)=>{

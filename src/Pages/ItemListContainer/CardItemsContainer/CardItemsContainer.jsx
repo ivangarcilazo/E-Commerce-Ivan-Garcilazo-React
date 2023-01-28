@@ -14,19 +14,29 @@ import isEmpty from "../../../utils/isEmpty"
 import LoadCircle from "./LoadCircle/LoadCircle"
 
 import dataBase from "../../../Firebase/config"
-import { collection, getDocs } from "firebase/firestore"
+import {collection, getDocs } from "firebase/firestore"
+
+import checkStock from "../../../utils/checkStock"
+
 
 export default function CardItemsContainer(){
     
     const{id}=useParams() 
+
     const[products, setProducts]=useState([])
-
-
     const productsCollection=collection(dataBase, "/products")
-    
+
+    const[IdStockNumber, setIdStockNumber]=useState({})
+    const usersOrdersCollection=collection(dataBase, '/ordersByCustomer')
+
     useEffect(()=>{
         getDocs(productsCollection).then((snapshot=>setProducts(snapshot.docs.map((docs)=>({id:docs.id, ...docs.data()})))))
+
+        getDocs(usersOrdersCollection).then((snapshot)=>setIdStockNumber(snapshot.docs.map((docs)=>(docs.data().cartProducts.map((payload)=>({stockSelectByUser:payload.payload.stockChoiceUser, idProductUser:payload.payload.productId } ))))))
     },[])
+   
+    !isEmpty(products)&&checkStock(products, IdStockNumber)
+    
     
     switch(id){
 
