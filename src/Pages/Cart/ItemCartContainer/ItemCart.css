@@ -1,0 +1,70 @@
+.deletedItemCart{
+    visibility: hidden;
+}
+
+.ItemCart{
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 13vw;
+    border-radius: 1vw;
+    display: flex;
+    padding-right: 1vw;
+    margin-left: 1vw;
+
+
+}
+    .itemImageCart{
+        width: 14vw;
+    }
+    .containerDataItemCart{
+        margin-left: 1vw;
+        display: flex;
+    }
+    .DataItem{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vw
+        
+    }
+    .dataItem-stock{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
+        .amountItemCart{
+            font-size: 1vw;
+            margin-top: 0.8vw;
+        }
+    .titleItemCart{
+        font-size: 1.6vw;
+        color: rgb(39, 39, 39);
+    }
+        .priceItemCart{
+            font-size: 1.5vw;
+        }
+    .saleItemCart{
+        background-color: rgb(255, 61, 61);
+        border-radius: 1vw;
+        padding: 0.2vw;
+        padding-top: 0.3vw;
+        width: 3.5vw;
+        height: 1vw;
+        color: white;
+        font-weight: bold;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgItemCart{
+        width: 2.5vw;
+    }
+    .removeButtomItemCart{
+        border-radius: 1vw;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }

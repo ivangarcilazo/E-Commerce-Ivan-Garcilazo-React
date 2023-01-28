@@ -22,6 +22,8 @@
             animation-timing-function: ease-in;
             animation-iteration-count: 1;
             opacity: 1;
+
+            text-decoration: underline rgba(243, 31, 31, 0.514);
         }
         @keyframes initTitle {
             0%{
@@ -57,9 +59,12 @@
             font-weight: bold;
             cursor: pointer;
             border-radius: .5vw;
-            background-color: rgba(0, 0, 0, 0.514);
+            background-color: rgba(243, 31, 31, 0.514);
             color: white;
             
+        }
+        .buttonItem:hover{
+            background-color: red;
         }
         .containerDetailsPrice{
             display: flex;
@@ -99,4 +104,23 @@
                 opacity: 1;
             }
 
+        }
+
+        .iconFreeShoppingItemDetail{
+            width: 2.5vw;
+            animation-name: initOtherInfo;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+                opacity: 1;
+
+        }
+        .containerStock{
+            animation-name: initOtherInfo;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            opacity: 1;
+            display: flex;
+            gap:0.5vw;
         }

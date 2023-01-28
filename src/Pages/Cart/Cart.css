@@ -18,8 +18,18 @@
     width: 50%;
     height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 2vw;
+    box-sizing: border-box;
+    padding-right: 1vw;
+
+    /* height:min-content; */
+    overflow-y:auto;
+
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 
@@ -61,6 +71,14 @@
         cursor: pointer;
         transition: all 0.3s;
     }
+    .purchaseCartButtonOff{
+        background-color: gray;
+        border: none;
+        border-radius: 1vw;
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
     .purchaseCartButton:hover{
 
 
@@ -71,3 +89,62 @@
         -moz-box-shadow: -1px -3px 25px 5px rgba(250,140,140,0.75);
     }
 
+/* Visibilidades y variables */
+.visibilityOff{
+    visibility: hidden;
+    position: absolute;
+}
+.errorInputData{
+    width: 23vw;    
+    height: 2.5vw;
+    padding: 0.5vw;
+
+    border-radius: 1vw;
+    border: 1px red ;
+}
+
+.buyedItOff{
+    position:absolute;
+    visibility: hidden;
+}
+.buyedItOn{
+    position: absolute;
+    height: 40vw;
+    width: 50vw;
+    left: 25%;
+    background-color: rgba(225, 255, 245, 0.699);
+    backdrop-filter: blur(6px);
+
+    border-radius: 1vw;
+
+    animation-name: buyedItOn;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .imageTicket{
+        width: 15vw;
+    }
+    @keyframes buyedItOn {
+        from{
+            opacity: 0;
+        }to{
+            opacity: 1;
+        }
+    }
+    @keyframes buyedItOff {
+        from{
+            position:absolute;
+            visibility: visible;
+            opacity:1;
+        }to{
+            position:absolute;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }

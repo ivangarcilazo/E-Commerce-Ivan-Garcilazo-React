@@ -1,6 +1,29 @@
-# Getting Started with Create React App
+# E-commerce OffStyle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El proyecto realiza funcionalidades comunes de un e-commerce, se puede navegar entre cada categoria, ver cada producto de forma individual, elegir el stock, añadir al carrito, poder realizar la compra y se devolverá una simulación de Tikcket de compra. 
+
+Acá va un listado de las tecnologias usadas
+Las tecnologías usadas son:
+
+    >Create React App
+    >Sweet Alert
+    >Css3
+    >HTML5
+
+
+Funcionalidades del proyecto:
+
+    -Visualizar items
+        -Elegir categorias de filtrado.
+    -Visualizar cada producto
+    -Poder elegir el stock de cada producto
+    -Añadir al carrito el item seleccionado
+    -En el carrito, visualizar la orden de compra
+        -Ver el total de costo
+        -Ver la cantidad elegida de cada Item
+        -Poner los datos necesarios para realizar la compra
+        -Una vez realizada la compra, los datos del comprador se enviarán a firebase.
+
 
 ## Available Scripts
 

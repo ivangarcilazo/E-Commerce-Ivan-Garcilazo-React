@@ -1,5 +1,5 @@
 const store={
-    Cart:[]
+    cartProducts:[]
 }
 
 export default store

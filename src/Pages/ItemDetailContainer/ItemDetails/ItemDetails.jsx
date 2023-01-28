@@ -1,9 +1,9 @@
 import "./ItemDetails.css"
 export default function ItemDetails(props){
-    const{children}=props
+    const{children, id}=props
 
     return(
-        <div className="containerItemDetail">
+        <div className="containerItemDetail" key={id}>
             {children}
         </div>
     )
