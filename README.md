@@ -27,6 +27,8 @@ Funcionalidades del proyecto:
         -En el ultimo update (update-stock), se añadió lo siguiente:    
             -Luego de realizar una orden, el stock elegido por el usuario será descontado del producto que él compro. De esa forma, en cada compra que se realiza, el stock irá disminuyendo hasta 0. Esto se hace actualizando los datos de el producto, restando el stock elegido por el usuario y el stock que había anteriormente. Todo esto suecede en firebase.
             
+            ![updateStock](https://user-images.githubusercontent.com/105944413/215297017-56ea5ccf-5c99-4ed9-ad54-e70866d25164.gif)
+
 
 ## Available Scripts
 
